@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2>Questionnaire</h2>
+	<form action="input.php" method="POST">
+		<p>Input your name:<br>
+			<input type="text" name="firstname" /></p>
+		<p>Sex:<br>
+			<input type="radio" name="sex" value="men" />men<br>
+			<input type="radio" name="sex" value="women" />women</p>
+		<p>Married?<br>
+			<input type="checkbox" name="married" />Yes</p>
+		<p>Select cities: <br>
+			<select name="cities[]" size="5" multiple="multiple">
+				<option value="Kyiv">Kyiv</option>
+				<option value="Kharkiv">Kharkiv</option>
+				<option value="Odessa">Odessa</option>
+				<option value="Dnipro">Dnipro</option>
+				<option value="Donetsk">Donetsk</option>
+			</select></p>
+		<p>Comment:<br>
+			<textarea name="comment" maxlength="100"></textarea></p>
+		<input type="submit" name="sub" value="Send Request">		
+	</form>
+</body>
+</html>
